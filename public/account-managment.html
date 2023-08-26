@@ -1,0 +1,28 @@
+<div class="add-account">
+    <h2>Add Account:</h2>
+    <form onsubmit="addNewAccount(event)">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" required>
+        <label for="role">role:</label>
+        <select name="role" id="role" required>
+            <option value="" disabled selected>Select a role:</option>
+            <option value="manager">manager</option>
+            <option value="customer">customer</option>
+        </select>
+        <input type="submit" value="Submit"><br>
+    </form>
+</div>
+<div class="delete-account">
+    <h2>Remove Account:</h2>
+    <form onsubmit="deleteAccount(event)">
+        <label for="username"> username:</label>
+        <input type="text" name="username" id="username-delete" required>
+        <input type="submit" value="Submit"><br>
+    </form>
+</div>
+<div id="message">
+
+</div>

@@ -1,0 +1,57 @@
+<div id="container">
+  <div class="Rform">
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/reviews.css">
+    </head>
+    <button onclick="getAllReviews()" id="show_Reviews">show all reviews</button>
+    <table class='reviews-table' style="display: none;">
+    <thead id="heads">
+      <tr> 
+      <th>Restaurant Name</th>
+      <th>Rate</th>
+      <th>Description</th>
+      <th>Customer Name</th>
+      <th>Photo Path</th>
+      <th></th>
+      </tr>
+    </thead>
+    <tbody id="reviewsList">
+    </tbody>
+    </table>
+    </div>
+
+    <div id="Comment-pic"></div>
+    <form onsubmit="addrestaurantReview(event)" id="review-form">
+      <h1 id="form-h1">Add your review</h1>
+      <label for="restaurantName">Restaurant Name:</label>
+      <input type="text" name="restaurantName" id="restaurantName">
+      <br>
+      <label for="description">Description:</label>
+      <textarea type="text" name="description" id="description" cols="30" rows="10" maxlength="35"></textarea>
+      <br>
+      <label for="rate">Rate from 1-10:</label>
+      <select name="rate" id="rate">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <br>
+      <label for="customerName">Commenter Name:</label>
+      <input type="text" name="customerName" id="customerName" required>
+      <br>
+            <!-- Add the file input for uploading an image -->
+      <label for="photo">Upload Picture:</label>
+      <input type="file" name="photo" id="photo">
+      <input type="submit" value="Submit" id="sbutton">
+    </form>
+    <div id="message-review">  </div>
+  </div>
+  </div>
+  <canvas id="myChart" width="600" height="1000"></canvas>

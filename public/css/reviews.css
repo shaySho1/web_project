@@ -1,0 +1,135 @@
+body, .Rform #form-h1, .Rform #commenter {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews-heading {
+font-size: 28px;
+font-weight: bold;
+color: #333;
+text-align: center;
+padding: 15px;
+}
+
+.Rform #review-form {
+width: 300px;
+height: 500px;
+background: #d3e3f5;
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+border-radius: 12px;
+margin-top: 80px;
+right: 80%;
+position: static;
+padding: 15px;
+}
+
+.Rform #Comment-pic {
+background-image: url('../images/rating.png');
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+margin-top: -65px;
+margin-left: 420px;
+width: 300px;
+height: 100px;
+border-radius: 50%;
+}
+
+.Rform #form-h1 {
+margin-bottom: 10px;
+color: #fff;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.Rform #restaurantName, .Rform #commenter {
+width: 750px;
+height: 40px;
+margin-top: 10px;
+padding: 5px;
+border-radius: 8px;
+font-weight: bold;
+outline: none;
+font-size: 1.2em;
+}
+
+.Rform #rating {
+width: 100%;
+padding: 10px;
+}
+
+#description {
+height: 80px;
+width: 750px;
+padding-top: 10px;
+border-radius: 6px;
+}
+
+#sbutton {
+border-radius: 25px;
+padding: 12px 24px;
+background: rgb(223, 70, 46);
+color: #fff;
+margin-top: 20px;
+border: none;
+outline: none;
+cursor: pointer;
+font-weight: bold;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#restaurantName {
+width: fit-content;
+border-radius: 8px;
+padding: 5px 10px;
+background: #f4f4f4;
+color: #333;
+}
+
+#show_Reviews, #filter_reviews, #show_chart {
+background-color: rgb(223, 70, 46);
+color: #fff;
+font-weight: bold;
+border: none;
+border-radius: 12px;
+padding: 12px 24px;
+margin-top: 20px;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#show_Reviews:hover, #filter_reviews:hover, #show_chart:hover {
+background-color: #f54c4c;
+}
+
+table.reviews-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+table.reviews-table thead {
+background-color: rgb(223, 70, 46);;
+color: #fff;
+font-weight: bold;
+}
+
+table.reviews-table th, table.reviews-table td {
+padding: 12px;
+border: 2px solid #404040;
+text-align: center;
+}
+
+table.reviews-table th {
+white-space: nowrap;
+}
+
+table.reviews-table tbody tr:nth-child(even) {
+background-color: #f4f4f4;
+}
+
+table.reviews-table tbody tr:hover {
+background-color: #d0e8f9;
+cursor: pointer;
+}

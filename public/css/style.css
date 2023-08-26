@@ -1,0 +1,349 @@
+:root {
+	--primary-color: #ff6347;
+	--secondary-color: #ffe5e1;
+  }
+  
+  body {
+	background-image: url('../images/pic 1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+  }
+  
+  a {
+	color: var(--primary-color);
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  
+  a:hover {
+	color: var(--secondary-color);
+  }
+  
+  #header {
+	background-color: rgba(248, 248, 248, 0.9);
+	text-align: center;
+	padding: 20px 0;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	float: right;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-right: 5px;
+  }
+  
+  #header h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+	color: var(--primary-color);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #header h1 a:hover {
+	color: rgb(0, 0, 0);
+  }
+  
+  #header h1 a span {
+	color: #b2d6cc;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+  }
+  
+  #header ul#navigation {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	margin-top: 30px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  #header ul#navigation li {
+	margin: 0;
+	padding: 0;
+  }
+  
+  #header ul#navigation li a {
+	color: var(--primary-color);
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: color 0.3s ease;
+	padding: 15px 20px;
+	display: block;
+  }
+  
+  #header ul#navigation li a:hover {
+	color: var(--secondary-color);
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+  }
+  
+  #header ul#navigation li.current a {
+	color: rgb(245, 113, 72);
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+  }
+  
+  #body {
+	background: rgba(255, 255, 255, 0.9);
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #body > h2 {
+	color: var(--primary-color);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: 20px;
+	border-bottom: 2px solid var(--primary-color);
+  }
+  
+  #body div.content {
+	overflow: hidden;
+	margin-top: 20px;
+  }
+  
+  #body div.content > div {
+	float: left;
+	width: 100%;
+  }
+  
+  #body div.content h3,
+  #body form h3,
+  #body ul.blog li h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 0;
+	padding-top: 20px;
+  }
+  
+  #body div.content img.figure {
+	margin: 0 0 20px;
+  }
+  
+  #body div.content div div.section {
+	padding: 30px 0 0;
+	width: 100%;
+  }
+  
+  #body div.content div ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+  }
+  
+  #body div.content div ul li {
+	float: left;
+	margin: 0 0 20px;
+	width: 100%;
+  }
+  
+  #body div.content div ul li img {
+	display: block;
+	max-width: 100%;
+	width: auto;
+  }
+  
+  #body div.content div ul li h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 10px;
+	text-align: center;
+  }
+  
+  #body form {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 25px auto;
+	overflow: hidden;
+	width: 90%;
+	background: #edbaa7;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #body form label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 16px;
+	color: var(--primary-color);
+	font-weight: bold;
+  }
+  
+  #body form input[type="text"],
+  #body form input[type="date"],
+  #body form input[type="number"],
+  #body form input[type="email"],
+  #body form select,
+  #body form option,
+  #body form #password {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #d8bfb6;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	color: #333;
+	font-size: 16px;
+	margin-bottom: 15px;
+  }
+  
+  #body form #role {
+	width: 92.5%;
+  }
+  
+  #body form input[type="submit"] {
+	background: var(--primary-color);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+  }
+  
+  #body form input[type="submit"]:hover {
+	background: var(--secondary-color);
+  }
+  
+  #message,
+  #message-discard {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+  }
+  
+  #message-review {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+	color: rgb(255, 74, 110);
+	font-weight: bold;
+  }
+  
+  #footer {
+	height: 50px;
+	margin-top: -50px;
+	text-align: center;
+	padding: 20px 0;
+	color: #ffffff;
+	font-size: 12px;
+  }
+  
+  #footer div span {
+	color: rgb(0, 0, 0);
+	font-size: 26px;
+  }
+  
+  div #h1-dis {
+	height: 220px;
+	width: 800px;
+	left: -100px;
+	background-image: url('../images/discount.jpg');
+	object-fit: cover;
+	background-repeat: no-repeat;
+  }
+  
+  .coupon-cube {
+	display: inline-block;
+	background-image: url('../images/discount.jpg');
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	width: 200px;
+	height: auto;
+	perspective: 1000px;
+	background-color: #e66868;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	/* Change cursor on hover */
+	transition: transform 0.5s, box-shadow 0.3s;
+	/* Include box shadow in transition */
+  }
+  
+  .coupon-details {
+	padding: 15px;
+	/* Slightly increase padding for more breathing room */
+	transform: rotateX(0) rotateY(0);
+	/* Reset initial rotation */
+	transition: transform 0.5s;
+	background-color: #ffffff;
+	/* White background for details */
+	border-radius: 0 0 8px 8px;
+	/* Rounded bottom corners */
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	/* Apply the same shadow as cube */
+  }
+  
+  .coupon-details > div {
+	margin: 10px 0;
+	/* Slightly increase margin between details */
+  }
+  
+  .coupon-cube:hover {
+	transform: rotateX(10deg) rotateY(10deg);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+	/* Increase shadow on hover */
+  }
+
+  table.restaurants-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+  }
+  
+  table.restaurants-table thead {
+	background-color: rgb(223, 70, 46);;
+	color: #fff;
+	font-weight: bold;
+  }
+  
+  table.restaurants-table th, table.restaurants-table td {
+	padding: 12px;
+	border: 2px solid #404040;
+	text-align: center;
+  }
+  
+  table.restaurants-table th {
+	white-space: nowrap;
+  }
+  
+  table.restaurants-table tbody tr:nth-child(even) {
+	background-color: #f4f4f4;
+  }
+  
+  table.restaurants-table tbody tr:hover {
+	background-color: #d0e8f9;
+	cursor: pointer;
+  }
