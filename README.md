@@ -24,6 +24,8 @@ The code follows the MVC (Model-View-Controller) pattern, which divides it into 
 -	The Views encompass everything located within the public folder. This pertains to components accessible to clients, such as HTML pages, CSS designs, and the script.js file housing JavaScript functionality.
 -	The Controller resides within the app.js file, directing the flow by managing routes and facilitating communication between the Model and the Views. 
 
+[](url)
+<img width="1163" alt="Screenshot 2023-08-27 at 0 27 15" src="https://github.com/shaySho1/web_project/assets/110743152/1f9bb70d-1c9d-43b3-a4ae-60d469fcab97">
 
 
 
