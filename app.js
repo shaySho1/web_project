@@ -28,14 +28,14 @@ app.listen(port, () => {
   console.log(`listening on http://localhost:${port}`)
 })
 
-// routing for the flights queries 
+
 app.get('/restaurant', async (req, res) => {
   const restaurantType = req.query.restaurantType;
   const restaurantLocation = req.query.restaurantLocation;
   const database = client.db('restaurant_database');
   const collection = database.collection('restaurants');
 
-  // Handle filtering flights
+  // filter restaurant
     const restaurants = await findResturantByFilter(restaurantType, restaurantLocation, collection);
     res.json(restaurants);
 
@@ -110,20 +110,17 @@ app.get('/restaurants', async (req, res) => {
   const database = client.db('restaurant_database');
   const collection = database.collection('restaurants');
 
-    // Handle filtering flights
     if (restaurantType) {
-      // Handle filtering flights
       const restaurants = await findResturantByFilter(restaurantType, collection);
       res.json(restaurants);
     } else {
-      // Handle viewing all flights
       const restaurants = await getAllRestaurants();
       res.json(restaurants);
     }
   });
 
 
-// routing add review
+// add review
 app.post('/reviews', async (req, res) => {
   console.log('req.body', req.body)
   const {restaurantName, rate, description, customerName, photo} = req.body
@@ -139,9 +136,7 @@ app.get('/reviews', async (req, res) => {
   const database = client.db('restaurant_database');
   database.collection('reviews');
 
-    // Handle viewing all flights
     const reviews = await getReviews();
     res.json(reviews);
   });
 
-//done by me

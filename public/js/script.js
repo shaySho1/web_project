@@ -6,7 +6,7 @@ const fetchFunction = (html) => {
         });
 }
 
-// add user by manager 
+// add account 
 async function addNewAccount(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
@@ -28,6 +28,7 @@ async function addNewAccount(event) {
     }
 }
 
+// delete account
 async function deleteAccount(event) {
     event.preventDefault();
     const username = document.getElementById('username-delete').value;
@@ -47,6 +48,7 @@ async function deleteAccount(event) {
     }
 }
 
+// add new restaurant
 async function addNewRestaurant(event) {
     event.preventDefault();
     const restaurantName = document.getElementById('restaurantName').value;
@@ -160,7 +162,7 @@ async function getAllReviews(){
     const reviewsTable = document.querySelector('.reviews-table');
     reviewsTable.style.display = 'block'; // Show the table
 }
-// show user all the flights
+// get all restaurants
 async function getAllRestaurants(){
     const respone = await fetch ('/Restaurants')
     const data = await respone.json();
