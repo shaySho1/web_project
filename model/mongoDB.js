@@ -23,7 +23,7 @@ async function run() {
   }
 }
 
-// check login
+// login
 const login = async (username,password) => {
   const client = new MongoClient(uri,{useUnifiedTopology: true});
 
@@ -52,7 +52,7 @@ const login = async (username,password) => {
   }
 };
 
-// creating new user in the system
+// create new account in the system
 const addAccount = async (username, password, role) => {
     await client.connect()
     const database = client.db('restaurant_database');
@@ -75,6 +75,7 @@ const addAccount = async (username, password, role) => {
     }
   };
 
+  // remove account
   const removeAccount = async (username) => {
     const database = client.db('restaurant_database');
     const collection = database.collection('accounts');
@@ -94,13 +95,12 @@ const addAccount = async (username, password, role) => {
     }
   };
 
-// creating new user in the system
+  // add new restaurant
 const addRestaurant = async (restaurantName,restaurantType,restaurantLocation) => {
     await client.connect()
     const database = client.db('restaurant_database');
     const collection = database.collection('restaurants');
 
-    // add new resturant
     const newResturant = {
       restaurantName: restaurantName,
       restaurantType: restaurantType,
@@ -111,20 +111,19 @@ const addRestaurant = async (restaurantName,restaurantType,restaurantLocation) =
       return {result:result.insertedId, IsSuccess:true};
   };
 
+  // add coupon code
   const createCouponCode = async (restaurantName, couponCode, discount) => {
     try {
       await client.connect();
       const database = client.db('restaurant_database');
       const collection = database.collection('coupons');
 
-      // Create a new coupon
       const newCoupon = {
         restaurantName: restaurantName,
         couponCode: couponCode,
         discount: discount
       };
   
-      // Insert the new coupon document
       const result = await collection.insertOne(newCoupon);
       console.log('Coupon inserted successfully');
       return { result: result.insertedId, IsSuccess: true };
@@ -134,6 +133,7 @@ const addRestaurant = async (restaurantName,restaurantType,restaurantLocation) =
     }
   };
 
+  // get all restaurants
   const getAllRestaurants = async () => {
     const client = new MongoClient(uri,{useUnifiedTopology: true});
     try{
@@ -153,6 +153,7 @@ const addRestaurant = async (restaurantName,restaurantType,restaurantLocation) =
     }
 };
 
+// return restaurant by filter
   const findResturantByFilter = async (restaurantType) => {
     const client = new MongoClient(uri, { useUnifiedTopology: true });
     
@@ -194,7 +195,7 @@ const addRestaurant = async (restaurantName,restaurantType,restaurantLocation) =
     }
 
     // get All Reviews
-const getReviews = async () => {
+  const getReviews = async () => {
   const database = client.db('restaurant_database');
   const collection = database.collection('reviews');
 
@@ -208,8 +209,6 @@ const getReviews = async () => {
   }
 };
 
-  
-//done
 
 // exporting querys to use in app.js
 module.exports={
