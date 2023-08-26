@@ -27,5 +27,11 @@ The code follows the MVC (Model-View-Controller) pattern, which divides it into 
 [](url)
 <img width="1163" alt="Screenshot 2023-08-27 at 0 27 15" src="https://github.com/shaySho1/web_project/assets/110743152/1f9bb70d-1c9d-43b3-a4ae-60d469fcab97">
 
+[](url)
+<img width="1163" alt="Screenshot 2023-08-27 at 0 27 15" src="https://github.com/shaySho1/web_project/assets/110743152/1f9bb70d-1c9d-43b3-a4ae-60d469fcab97">
 
-
+<img width="1367" alt="Screenshot 2023-08-27 at 1 11 54" src="https://github.com/shaySho1/web_project/assets/110743152/64413507-910b-43ef-b727-1d86c955a9c0">
+<img width="1206" alt="Screenshot 2023-08-27 at 1 11 58" src="https://github.co
+<img width="1248" alt="Screenshot 2023-08-27 at 0 27 01" src="https://github.com/shaySho1/web_project/assets/110743152/43f167ef-9806-4f5e-aa48-79c6be9a46df">
+<img width="1135" alt="Screenshot 2023-08-27 at 0 27 07" src="https://github.com/shaySho1/web_project/assets/110743152/13709e2f-63af-4755-9f4f-ec9fe25aa84d">
+<img width="1150" alt="Screenshot 2023-08-27 at 1 12 03" src="https://github.com/shaySho1/web_project/assets/110743152/05dda9f6-291c-410e-b7fd-0321e39be575">
