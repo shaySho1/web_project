@@ -1,4 +1,4 @@
-#The_Best_Restaurant
+##The_Best_Restaurant
 Project for web development course
 Don’t know where to eat? our web site will help you to find the best place for you.
 In our web you will find 2 types of users - customers and manager. Each can do and see different things.
