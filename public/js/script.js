@@ -180,25 +180,4 @@ async function getAllRestaurants(){
 
     const restaurantTable = document.querySelector('.restaurants-table');
     restaurantTable.style.display = 'block'; // Show the table
-    
 }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Call a function to set up the event listeners
-//     setupEventListeners();
-// });
-
-// function setupEventListeners() {
-//     // Event listener for Discounts link
-//     const discountsLink = document.querySelector('#navigation li:nth-child(2) a');
-//     if (discountsLink) {
-//         discountsLink.addEventListener('click', () => {
-//             fetchCoupon();
-//         });
-//     }
-// }
-
-// //make fetchCoupon run onload
-// document.addEventListener('DOMContentLoaded', () => {
-//     fetchCoupon();
-// });
