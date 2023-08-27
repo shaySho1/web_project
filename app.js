@@ -132,7 +132,6 @@ app.post('/reviews', async (req, res) => {
 })
 
 app.get('/reviews', async (req, res) => {
-  const destination = req.query.destination;
   const database = client.db('restaurant_database');
   database.collection('reviews');
 
