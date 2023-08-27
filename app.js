@@ -66,9 +66,9 @@ app.post('/accounts', async (req, res) => {
   const {username, password, role} = req.body
     const {IsSuccess} = await addAccount(username, password, role)
     if (IsSuccess) {
-      res.status(200).json({message: "Inserted sucessfully"})
+      res.status(200).json({message: "New Account was added!"})
     }
-    else{res.status(400).json({message: "Inserted not sucessfully"})}
+    else{res.status(400).json({message: "Could not add account"})}
 })
 
 //delete user
@@ -77,9 +77,9 @@ app.delete('/accounts', async (req, res) => {
   const {username} = req.body
     const {IsSuccess} = await removeAccount(username)
     if (IsSuccess) {
-      res.status(200).json({message: "deleted sucessfully"})
+      res.status(200).json({message: "Account was deleted"})
     }
-    else{res.status(400).json({message: "deleted not sucessfully"})}
+    else{res.status(400).json({message: "Account was not deleted sucessfully"})}
 })
 
 // add new resturant
@@ -126,9 +126,9 @@ app.post('/reviews', async (req, res) => {
   const {restaurantName, rate, description, customerName, photo} = req.body
     const {IsSuccess} = await addReview(restaurantName, rate, description, customerName, photo) 
     if (IsSuccess) {
-      res.status(200).json({message: "comment sent sucessfully"})
+      res.status(200).json({message: "Thank you for the review!"})
     }
-    else{res.status(400).json({message: "comment not sent sucessfully"})}
+    else{res.status(400).json({message: "Could not save review"})}
 })
 
 app.get('/reviews', async (req, res) => {

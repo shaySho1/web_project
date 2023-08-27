@@ -54,13 +54,13 @@ async function addNewRestaurant(event) {
     const restaurantName = document.getElementById('restaurantName').value;
     const restaurantType = document.getElementById('restaurantType').value;
     const restaurantLocation = document.getElementById('restaurantLocation').value;
-    const newResturant = {restaurantName,restaurantType,restaurantLocation};
+    const newRestaurant = {restaurantName,restaurantType,restaurantLocation};
     const response = await fetch('/resturant', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(newResturant)
+            body: JSON.stringify(newRestaurant)
         })
     const data = await response.json();
     console.log('data', data)
@@ -135,9 +135,9 @@ async function addrestaurantReview(event){
     })
     const data = await response.json();
     console.log('data', data)
-    if (data === "Inserted sucessfully") {document.getElementById('message').innerText=data.message}
+    if (data === "Inserted sucessfully") {document.getElementById('message-review').innerText=data.message}
     else {
-        document.getElementById('message').innerText=data.message
+        document.getElementById('message-review').innerText=data.message
     }
 }
 
@@ -183,22 +183,22 @@ async function getAllRestaurants(){
     
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Call a function to set up the event listeners
-    setupEventListeners();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Call a function to set up the event listeners
+//     setupEventListeners();
+// });
 
-function setupEventListeners() {
-    // Event listener for Discounts link
-    const discountsLink = document.querySelector('#navigation li:nth-child(2) a');
-    if (discountsLink) {
-        discountsLink.addEventListener('click', () => {
-            fetchCoupon();
-        });
-    }
-}
+// function setupEventListeners() {
+//     // Event listener for Discounts link
+//     const discountsLink = document.querySelector('#navigation li:nth-child(2) a');
+//     if (discountsLink) {
+//         discountsLink.addEventListener('click', () => {
+//             fetchCoupon();
+//         });
+//     }
+// }
 
-//make fetchCoupon run onload
-document.addEventListener('DOMContentLoaded', () => {
-    fetchCoupon();
-});
+// //make fetchCoupon run onload
+// document.addEventListener('DOMContentLoaded', () => {
+//     fetchCoupon();
+// });
